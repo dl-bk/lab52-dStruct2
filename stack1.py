@@ -15,9 +15,11 @@
 class Stack:
     def __init__(self, capacity) -> None:
         self.stack = []
+        #для 2 задания убрать поле
         self.capacity = capacity
 
     def push(self, value):
+        #для 2 задания убрать проверку
         if len(self.stack) < self.capacity:
             if isinstance(value, int):
                 self.stack.append(value)
@@ -39,6 +41,8 @@ class Stack:
     
     def isEmpty(self):
         return not bool(self.stack)
+    
+    # для 2 задания убрать функцию
     def isFull(self):
         return len(self.stack) == self.capacity
     
